@@ -63,3 +63,9 @@ img {
 .button:hover {
     background-color: #004499;
 }
+#caja{
+      background-color: aliceblue;
+      width: 500px;
+      height: 300px;
+    cursor: url('/Resources/nat991.cur'), auto;
+}
