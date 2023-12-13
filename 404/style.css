@@ -8,7 +8,7 @@ body {
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: rebeccapurple;
+    color: white;
 }
 
 /* Estilos para los encabezados */
@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-size: 20px;
     font-weight: bold;
-    color: #333333;
+    color: #ffffff;
 }
 
 /* Estilos para los enlaces */
