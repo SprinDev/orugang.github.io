@@ -6,6 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coloriasd</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" id="coso">
+    <script>
+        const iconLink = document.getElementById("coso");
+        let frameIndex = 0;
+
+        function animateFavicon() {
+            const frames = [
+                "https://cdn.discordapp.com/attachments/1159986561732063333/1176317373918224444/image.png?ex=65a5ccec&is=659357ec&hm=c529df1882b89729b8c734a0191781b638ea441cab2d9cd011f7032f80d025a9&",
+                "https://cdn.discordapp.com/attachments/1159986561732063333/1176319070686158878/image.png?ex=65a5ce81&is=65935981&hm=af339eac7d19da0172f3db32b31ba8bc99d1c7fa042cd4d029daa958ab4e940d&"
+            ];
+
+            iconLink.href = frames[frameIndex];
+            frameIndex = (frameIndex + 1) % frames.length;
+
+            setTimeout(animateFavicon, 10);
+        }
+
+        animateFavicon();
+    </script>
 </head>
 <body>
     
