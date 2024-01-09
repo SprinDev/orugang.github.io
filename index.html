@@ -174,5 +174,15 @@
   <!-- Fin Contador de visitas -->
 <!-- Imagenes, Audio y video -->
 <a href="https://discord.sprinserver.com.ar" class="button">Server de discord</a>
-<audio src="/Resources/menuloop.mp3" autoplay loop volume="0.3"></audio>
+
+
+<audio autoplay id="bgAudio">
+  <source src="/Resources/menuloop.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var audio = document.getElementById("bgAudio");
+  audio.volume = 0.3;
+</script>
+
 </html>
