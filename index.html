@@ -16,7 +16,61 @@
 
     <title>Sprin's Page</title>
 </head>
-    
+
+    <script language="JavaScript" type="text/javascript">
+
+//"index_count" is subtracted from "title_length" to get the first # of the substring method
+var index_count = 0; 
+
+// What you want to scroll in the title bar
+var title_string = "RAINBOW DIVIDERS!!!!!!!!!!!!!!!!!!!!!!!!";
+
+// length of title string
+var title_length = title_string.length;
+
+// Variable for setTimeout()
+var cmon;
+
+// Counter for clearTimeout()
+var kill_length = 0;
+
+
+
+function loopTheScroll()
+{
+scrollTheTitle();
+
+// If greater than length of string then stop calling itself
+if(kill_length> title_length)
+ {
+ clearTimeout(cmon);
+ }
+
+kill_length++;
+
+// Calls itself 10x per second - change the value to speed up or slow down the scroll (in 1/1000th of a second)
+cmon = setTimeout("loopTheScroll();",100)
+}
+
+
+function scrollTheTitle()
+{
+
+// Difficult to explain, must be familiar w/ the substring method
+var doc_title = title_string.substring((title_length - index_count - 1),title_length);
+
+// put doc_title in the title bar
+document.title = doc_title;
+
+index_count++;
+}
+
+
+loopTheScroll();
+
+
+</script>
+
 <body>
   <link rel="logo" src-="/Resources/logo.png">
     <!-- Contenido Html (encabezados, texto y listas?) :p-->
